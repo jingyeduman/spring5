@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--<bean id="user" class="com.example.spring1.User">
+        <property name="username" value="test"></property>
+    </bean>-->
+
+    <bean id="postBean" class="com.example.spring1.PostBean"></bean>
+    <bean
+            id="user"
+            class="com.example.spring1.User"
+            scope="prototype"
+            init-method="initMethod"
+            destroy-method="destoryMethod"
+    >
+        <constructor-arg name="username" value="testttt"></constructor-arg>
+    </bean>
+
+</beans>

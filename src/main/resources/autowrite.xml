@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        byName beanId 的值和属性的名称要一致
+        byType beanId 根据属性的类型进行注入（只要找到类型一致的bean即可）
+    -->
+    <bean id="emp" class="com.example.spring1.bean.Emp" autowire="byName">
+
+    </bean>
+    <bean id="dept" class="com.example.spring1.bean.Dept"></bean>
+</beans>

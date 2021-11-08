@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="student" class="com.example.spring1.Student">
+        <property name="courses">
+            <array>
+                <value>string1</value>
+                <value>string2</value>
+                <value>string3</value>
+            </array>
+        </property>
+
+        <property name="list">
+            <list>
+                <value>list1</value>
+                <value>list2</value>
+                <value>list3</value>
+            </list>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="key1" value="value1"></entry>
+            </map>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>set1</value>
+                <value>set2</value>
+                <value>set3</value>
+            </set>
+        </property>
+    </bean>
+</beans>
